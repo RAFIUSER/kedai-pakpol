@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Usaha - Warung Pak Pol</title>
+    <link rel="shortcut icon" href="assets/icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+
+    <style>
+      .sticky-active{
+        background-color: #003D81;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, .5);
+        transition: ease-in-out .5s;
+      }
+    </style>
+</head>
+<body>
+
+
+  <nav id="nav" class="fixed w-full z-20 top-0 start-0 border-gray-200 border-b font-poppins">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="index.html" class="flex items-center space-x-3">
+          <img src="assets/img/KedaiPakPol-Rev.png" class="h-8" alt="Logo">
+      </a>
+
+      <!-- Hamburger -->
+      <div class="flex md:order-2 space-x-3 md:space-x-0 md:hidden">
+          <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg text-white " aria-controls="navbar-sticky" aria-expanded="false">
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+        </button>
+      </div>
+
+      <!-- Desktop Nav -->
+      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+        <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border rounded-lg md:space-x-8 md:flex-row md:mt-0 md:border-0">
+          <li>
+            <a href="#menu" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-500 md:p-0">Menu</a>
+          </li>
+          <li>
+            <a href="#tentang" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-500 md:p-0 ">Tentang</a>
+          </li>
+          <li>
+            <a href="#kontak" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-500 md:p-0 ">Kontak</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+    <!-- Video -->
+  <section class="video-container relative w-full h-screen flex flex-col justify-center items-center overflow-hidden font-montserrat">
+      <video autoplay muted loop class="absolute object-cover w-full h-full" src="assets/dikdasmenmuhammadiyah.webm"></video>
+      <h1 class="relative text-white text-4xl font-bold text-center">Kedai Pak Pol</h1>
+      <h2 class="relative text-white text-xl font-montserrat text-center mt-4">Solusi Makan Kenyang Kampus Sungai Sahang.</h2>
+      <div class="small-line mt-5 w-24 h-1 bg-white shadow-lg"></div>
+  </section>
+
+
+
+    <!-- tentang -->
+  <section class="w-full overflow-hidden flex items-center justify-center bg-slate-200">
+      <div id="tentang" class="container p-8 flex flex-col-reverse items-center justify-between flex-wrap md:py-16 md:flex-row gap-8" data-aos="fade-right">
+          <div class="container flex-1 self-start">
+            <h1 class="text-xl font-bold font-poppins md:text-2xl">Sejarah Kedai Pak Pol</h1>
+            <p class="font-montserrat mt-2 font-normal text-justify md:text-lg">Asal mula nama Kedai Pak Pol diambil dari anak kebanggaan Ibu Kasmawati yang lulus dengan bangga ke dalam instansi Polrestabes atas prestasi, tekad, serta doa yang tak kunjung berhenti dari sang ibu. Pada awalnya, kedai ini dibentuk karena kesulitan dalam menghadapi cobaan yang melanda selama Pandemi Covid-19.</p>
+            <br>
+            <p class="hidden lg:inline-block font-montserrat font-normal text-justify md:text-lg">Usaha Kedai yang bernama Kedai Pak Pol ini dibentuk sebagai respon kebutuhan dalam kehidupan sehari-hari ibu tersebut. Kedai ini dinamakan Pak Pol juga dengan latar belakang bahwa usaha ini dibentuk dengan diberi pembiayaan oleh anak pertama pemilik yang berprofesi sebagai polisi.</p>
+          </div>
+          <div class="container flex-1 w-full overflow-hidden flex justify-center md:justify-end items-center">
+            <img src="assets/img/kedai-pakpol-fix.jpg" class="rounded-xl object-cover h-full md:aspect-square w-4/5" alt="image">
+          </div>
+      </div>
+    </section>
+
+
+
+
+  <!-- Menu -->
+  <!-- <section class="w-full ">
+    <h1>Menu</h1>
+  </section> -->
+
+  <!-- Menu end -->
+
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="bg-slate-500 overflow-hidden font-poppins">
+    <div class="contianer text-white w-full flex flex-col text-wrap md:flex-row flex-wrap items-start justify-between gap-8 md:gap-4 p-8">
+      <div class="container flex-1 flex justify-center flex-col">
+        <h1 class="font-bold text-xl">Tentang</h1>
+        <p class="capitalize">Sebuah Kedai dengan cita rasa khas yang menyediakan aneka makanan dan minuman.</p>
+      </div>
+      <div class="container flex-1 flex justify-center flex-col">
+        <h1 class="font-bold text-xl">Alamat</h1>
+        <p>Jl. Sungai Sahang, Lorok Pakjo, Kec. Ilir Bar. I, Kota Palembang, Sumatera Selatan</p>
+      </div>
+      <div class="container flex-1 flex justify-end">
+        <iframe class="w-full h-52" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249.02646194730144!2d104.7311128256828!3d-2.979908255528289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b75eb0503a7c3%3A0x28ea9ddd3efd54fd!2sManajemen%20informatika%20D4%20POLITEKNIK%20NEGERI%20SRIWIJAYA!5e0!3m2!1sid!2sid!4v1734265126172!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    <div class="bg-main text-white p-2">
+      <p class="text-center text-base">Copyright &copy Kelompok 1 <script>document.write(new Date().getFullYear());</script></p>
+    </div>
+  </footer>
+
+  <!-- Footer Enddd -->
+
+    <!-- Custom script -->
+    <script src="script.js"></script>
+</body>
+</html>
