@@ -700,6 +700,10 @@ video {
   display: flex;
 }
 
+.inline-flex {
+  display: inline-flex;
+}
+
 .hidden {
   display: none;
 }
@@ -738,6 +742,10 @@ video {
 
 .h-96 {
   height: 24rem;
+}
+
+.h-10 {
+  height: 2.5rem;
 }
 
 .w-1\/2 {
@@ -795,6 +803,10 @@ video {
 
 .w-5\/6 {
   width: 83.333333%;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .min-w-fit {
