@@ -688,6 +688,10 @@ video {
   margin-bottom: 2rem;
 }
 
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
 .block {
   display: block;
 }
@@ -1126,6 +1130,11 @@ video {
   padding-bottom: 3rem;
 }
 
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .pb-5 {
   padding-bottom: 1.25rem;
 }
@@ -1524,6 +1533,11 @@ video {
 
   .lg\:p-16 {
     padding: 4rem;
+  }
+
+  .lg\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 }
 
