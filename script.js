@@ -9,6 +9,7 @@ AOS.init({
 
 
 // Sticky Nav
+if (document.title != "Kontak - Kedai Pak Pol") {    
 window.addEventListener('scroll', () =>{
     if (window.scrollY > 25) {
         nav.classList.add('sticky-active');
@@ -18,6 +19,7 @@ window.addEventListener('scroll', () =>{
         nav.classList.add('border-b');
     }
 });
+}
 
 
 document.addEventListener("DOMContentLoaded", () => {

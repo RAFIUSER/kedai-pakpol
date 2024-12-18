@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil Usaha - Warung Pak Pol</title>
+    <title>Beranda - Warung Pak Pol</title>
     <link rel="shortcut icon" href="assets/icon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
 
     
     <style>
@@ -21,7 +22,7 @@
 <body>
 
 
-  <nav id="nav" class="fixed w-full z-20 top-0 start-0 border-gray-200 border-b font-poppins">
+  <nav id="nav" class="fixed w-full z-50 top-0 start-0 border-gray-200 border-b font-poppins ">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <a href="index.html" class="flex items-center space-x-3">
           <img src="assets/img/KedaiPakPol-Rev.png" class="h-8" alt="Logo">
@@ -47,7 +48,7 @@
           <li class="mb-4"><a href="#home" class="mobileBtn hover:text-gray-300">Beranda</a></li>
           <li class="mb-4"><a href="#menu" class="mobileBtn hover:text-gray-300">Menu Makanan</a></li>
           <li class="mb-4"><a href="#tentang" class="mobileBtn hover:text-gray-300">Tentang</a></li>
-          <li class="mb-4"><a href="#kontak" class="mobileBtn hover:text-gray-300">Kontak</a></li>
+          <li class="mb-4"><a href="kontak.html" class="mobileBtn hover:text-gray-300">Kontak</a></li>
         </ul>
       </div>
 
@@ -59,13 +60,13 @@
       <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
         <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border rounded-lg md:space-x-8 md:flex-row md:mt-0 md:border-0">
           <li>
-            <a href="#menu" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-500 md:p-0">Menu</a>
+            <a href="#tentang" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-500 md:p-0">Tentang</a>
           </li>
           <li>
-            <a href="#tentang" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-500 md:p-0 ">Tentang</a>
+            <a href="#menu" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-500 md:p-0 ">Menu</a>
           </li>
           <li>
-            <a href="#kontak" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-500 md:p-0 ">Kontak</a>
+            <a href="kontak.html" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-500 md:p-0 ">Kontak</a>
           </li>
         </ul>
       </div>
@@ -75,21 +76,23 @@
 
   <!-- Video -->
   <section id="home" class="video-container relative w-full h-screen flex flex-col justify-center items-center overflow-hidden font-montserrat">
-      <video autoplay muted loop class="absolute object-cover w-full h-full" src="assets/VID_20241216_151353.mp4"></video>
-      <h1 class="relative text-white text-4xl font-bold text-center">Kedai Pak Pol</h1>
-      <h2 class="relative text-white text-lg md:text-xl font-montserrat text-center mt-4">Solusi Makan Kenyang Kampus Sungai Sahang.</h2>
+      <video autoplay muted loop class="absolute object-cover w-full h-full" src="assets/video/video-bg.mp4"></video>
+      <!-- <img src="assets/img/bg.jpg" class="absolute object-cover w-full h-full" alt="bg"> -->
+      <h1 class="relative text-white text-4xl font-bold text-center" data-aos="fade-right">Kedai Pak Pol</h1>
+      <h2 class="relative text-white text-lg md:text-xl font-montserrat text-center mt-4" data-aos="fade-right">Solusi Makan Kenyang Kampus Sungai Sahang.</h2>
       <div class="small-line mt-5 w-24 h-1 bg-white shadow-lg"></div>
   </section>
 
 
   <!-- tentang -->
-  <section class="w-full overflow-hidden flex items-center justify-center bg-slate-200">
-      <div id="tentang" class="container p-8 flex flex-col-reverse items-center justify-between flex-wrap md:py-16 md:flex-row gap-8" data-aos="fade-right">
-          <div class="container flex-1 self-start mt-4 flex justify-center items-center flex-col">
-            <h1 class="text-2xl font-bold font-poppins md:text-2x uppercase text-slate-800">Sejarah Kedai Pak Pol</h1>
-            <p class="font-montserrat mt-2 font-normal text-justify md:text-lg">Asal mula nama Kedai Pak Pol diambil dari anak kebanggaan Ibu Kasmawati yang lulus dengan bangga ke dalam instansi Polrestabes atas prestasi, tekad, serta doa yang tak kunjung berhenti dari sang ibu. Pada awalnya, kedai ini dibentuk karena kesulitan dalam menghadapi cobaan yang melanda selama Pandemi Covid-19.</p>
+  <section id="tentang" class="w-full overflow-hidden flex items-center justify-center ">
+      <div class="container p-8 flex flex-col-reverse items-center justify-between flex-wrap md:py-16 md:flex-row gap-8" data-aos="fade-right">
+          <div class="container flex-1 self-center mt-4 flex justify-center items-center flex-col">
+            <h1 class="text-2xl font-bold font-poppins uppercase text-slate-800">Sejarah Kedai Pak Pol</h1>
+            <h2 class="capitalize text-lg mb-8">Asal mula kedai ini.</h2>
+            <p class="font-montserrat  font-normal text-justify md:text-lg">Asal mula nama Kedai Pak Pol diambil dari anak kebanggaan Ibu Kasmawati yang lulus dengan bangga ke dalam instansi Polrestabes atas prestasi, tekad, serta doa yang tak kunjung berhenti dari sang ibu. Pada awalnya, kedai ini dibentuk karena kesulitan dalam menghadapi cobaan yang melanda selama Pandemi Covid-19.</p>
             <br>
-            <p class="hidden lg:inline-block font-montserrat font-normal text-justify md:text-lg">Usaha Kedai yang bernama Kedai Pak Pol ini dibentuk sebagai respon kebutuhan dalam kehidupan sehari-hari ibu tersebut. Kedai ini dinamakan Pak Pol juga dengan latar belakang bahwa usaha ini dibentuk dengan diberi pembiayaan oleh anak pertama pemilik yang berprofesi sebagai polisi.</p>
+            <p class="lg:inline-block font-montserrat font-normal text-justify md:text-lg">Usaha Kedai yang bernama Kedai Pak Pol ini dibentuk sebagai respon kebutuhan dalam kehidupan sehari-hari ibu tersebut. Kedai ini dinamakan Pak Pol juga dengan latar belakang bahwa usaha ini dibentuk dengan diberi pembiayaan oleh anak pertama pemilik yang berprofesi sebagai polisi.</p>    
           </div>
           <div class="container flex-1 w-full overflow-hidden flex justify-center md:justify-end items-center">
             <img src="assets/img/kedai-pakpol-fix.jpg" class="rounded-xl object-cover h-full md:aspect-square w-4/5" alt="image">
@@ -97,13 +100,19 @@
       </div>
     </section>
 
-  <!-- Menu -->
-  <section class="w-full py-16 px-4 lg:px-16 ">
+  
+  
+  
+  
+  
+    <!-- Menu -->
+  <section id="menu" class="w-full py-16 px-4 lg:px-16 ">
+    
 
-    <div class="container w-full flex flex-col justify-center gap-2 items-center mb-12 text-neutral-800" data-aos="fade-right">
+    <div class="container w-full flex flex-col justify-center gap-2 items-center mb-12 text-slate-700" data-aos="fade-right" >
       <h1 class="font-bold text-3xl ">MENU</h1>
       <svg height="10" width="150" xmlns="http://www.w3.org/2000/svg">
-        <line x1="0" y1="10" x2="250" y2="10" style="stroke:#262626;stroke-width:12" />
+        <line x1="0" y1="10" x2="250" y2="10" style="stroke:#334155;stroke-width:12" />
       </svg>
     </div>
 
@@ -319,15 +328,122 @@
   </section>
 
   <!-- Menu end -->
-   
 
+
+  <!-- Testimonial -->
+   
+  <section class="w-full mt-12 bg-slate-200 py-16 px-8 flex items-center ">
+    <div class="container w-full flex-col md:flex-row flex justify-center items-center gap-12">
+
+
+      <div class="flex-1 text-slate-700" data-aos="fade-right">
+        <!-- Text -->
+         <h1 class="text-center md:text-left uppercase font-semibold text-2xl">Testimonial</h1>
+         <h2 class="text-center md:text-left capitalize text-lg mb-8">apa kata konsumen kami?</h2>
+         <p class="font-montserrat text-base capitalize text-justify">Selalu mendengar pendapat customer adalah solusi yang tepat untuk mengembangkan sebuah UMKM. Kami berharap customer selalu kembali dengan wajah gembira setelah datang di kedai kami.</p>
+      </div>
+
+
+
+      <!-- Foto -->
+      <div class="flex-1 flex justify-center flex-col md:flex-row items-start gap-4" data-aos="fade-left">
+
+        <!-- robin -->
+        <div class="md:max-w-60 rounded-lg shadow-lg bg-white md:hover:scale-105 transition-all cursor-pointer overflow-hidden">
+          <!-- Bagian Gambar -->
+          <div class="relative">
+            <img src="assets/img/testi/robin.png" alt="Tomato" class="w-full object-cover ">
+            <!-- Tombol Navigasi -->
+          </div>
+          <!-- Konten Card -->
+          <div class="p-5 flex flex-col flex-wrap">
+            <h2 class="text-xl font-bold mb-2">Muqorrobin Hasir</h2>
+            <p class="text-gray-700 text-sm capitalize text-justify">
+              Mamamia Lezatos!!
+            </p>
+          </div>
+        </div>
+
+        <!-- catur -->
+        <div class="md:max-w-60 rounded-lg shadow-lg bg-white md:hover:scale-105 transition-all cursor-pointer overflow-hidden">
+          <!-- Bagian Gambar -->
+          <div class="relative">
+            <img src="assets/img/testi/catur.png" alt="Tomato" class="w-full object-cover">
+            <!-- Tombol Navigasi -->
+          </div>
+          <!-- Konten Card -->
+          <div class="p-5 flex flex-col flex-wrap">
+            <h2 class="text-xl font-bold mb-2">Catur Bagus</h2>
+            <p class="text-gray-700 text-sm capitalize text-justify">
+              enak dan murah sekali!
+            </p>
+          </div>
+        </div>
+  </section>
   
+  <!-- Testimonial End -->
+
+
+  <!-- Gallery -->
+
+  <section class="py-16 px-8 flex flex-wrap flex-col justify-center items-center" data-aos="fade-right">
+
+    <div class="container w-full flex flex-col justify-center gap-2 items-center mb-12 text-slate-700" >
+      <h1 class="font-bold text-3xl uppercase">galeri usaha</h1>
+      <svg height="10" width="150" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0" y1="10" x2="250" y2="10" style="stroke:#334155;stroke-width:12" />
+      </svg>
+    </div>
+
+    <div id="gallery" class="relative w-full" data-carousel="slide">
+      <!-- Carousel wrapper -->
+      <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+           <!-- Item 1 -->
+          <div class="hidden duration-700 ease-in-out object-cover " data-carousel-item>
+              <img src="assets/img/bg.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+          </div>
+          <!-- Item 2 -->
+          <div class="hidden duration-700 ease-in-out object-cover " data-carousel-item="active">
+              <img src="assets/img/bg2.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+          </div>
+          <!-- Item 3 -->
+          <div class="hidden duration-700 ease-in-out object-cover " data-carousel-item>
+              <img src="assets/img/bg3.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+          </div>
+          <!-- Item 4 -->
+          <div class="hidden duration-700 ease-in-out object-cover " data-carousel-item>
+              <img src="assets/img/bg1.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+          </div>
+      </div>
+      <!-- Slider controls -->
+      <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full  group-hover:bg-white/50  ">
+              <svg class="w-4 h-4 text-slate-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+              </svg>
+              <span class="sr-only">Previous</span>
+          </span>
+      </button>
+      <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full  group-hover:bg-white/50  ">
+              <svg class="w-4 h-4 text-slate-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+              </svg>
+              <span class="sr-only">Next</span>
+          </span>
+      </button>
+  </div>
+  
+
+  </section>
+
+
+  <!-- End Gallery -->
 
   <!-- Tombol WhatsApp -->
   <a href="https://wa.me/6285896904814" target="_blank" class="z-50 fixed bottom-4 right-4 bg-green-500 p-4 rounded-full shadow-lg hover:bg-green-600 transition-transform transform hover:scale-110" aria-label="Chat on WhatsApp">
     <img src="assets/icon/whatsapp-svgrepo-com.svg" class="h-8 w-8" alt="wa">
   </a>
-
 
 
   <!-- Footer -->
@@ -354,6 +470,8 @@
 
     <!-- Custom script -->
     <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 </body>
 </html>
 

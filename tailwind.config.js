@@ -13,6 +13,9 @@ module.exports = {
       colors: {
         'main': '#003D81',
       },
+      height: {
+        '1/3-screen': '40vh', // 1/3 dari tinggi layar
+      },
     },
   },
   plugins: [],
