@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beranda - Warung Pak Pol</title>
     <link rel="shortcut icon" href="assets/icon/favicon.ico" type="image/x-icon">
-
+    
+    <!-- Flowbite -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" /> -->
+    
     <!-- Tailwind CSS -->
     <link rel="stylesheet" href="styles.css">
 
-    <!-- Flowbite -->
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
-    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -59,7 +59,7 @@
         <ul class="p-4 text-center">
           <li class="mb-4"><a href="index.html" class="mobileBtn hover:text-gray-300">Beranda</a></li>
           <li class="mb-4"><a href="index.html#tentang" class="mobileBtn hover:text-gray-300">Tentang</a></li>
-          <li class="mb-4"><a href="index.html#menu" class="mobileBtn hover:text-gray-300">Menu Makanan</a></li>
+          <li class="mb-4"><a href="menu.html" class="mobileBtn hover:text-gray-300">Menu Makanan</a></li>
           <li class="mb-4"><a href="galeri.html" class="mobileBtn hover:text-gray-300">Galeri</a></li>
           <li class="mb-4"><a href="kontak.html" class="mobileBtn hover:text-gray-300">Kontak</a></li>
         </ul>
@@ -76,7 +76,7 @@
             <a href="index.html#tentang" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-500 md:p-0">Tentang</a>
           </li>
           <li>
-            <a href="index.html#menu" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-500 md:p-0 ">Menu</a>
+            <a href="menu.html" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-500 md:p-0 ">Menu</a>
           </li>
           <li>
             <a href="galeri.html" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-500 md:p-0 ">Galeri</a>
@@ -88,8 +88,8 @@
       </div>
     </div>
   </nav>
-
 <!-- END NAVVVVVVVVVVVVVVVVVVVV -->
+
 
 
 <!-- Video -->
@@ -103,9 +103,10 @@
 <!-- End Video -->
 
 
+
 <!-- tentang -->
   <section id="tentang" class="w-full overflow-hidden flex items-center justify-center ">
-      <div class="container flex px-8 py-16 flex-col-reverse items-center justify-between flex-wrap md:py-16 md:flex-row gap-8" data-aos="fade-right">
+      <div class="flex container py-16 px-8 flex-col-reverse items-center justify-between flex-wrap lg:flex-row gap-8" data-aos="fade-right">
           <div class="container flex-1 self-center mt-4 flex justify-center items-center flex-col">
             <h1 class="text-2xl font-bold font-poppins uppercase text-slate-800">Sejarah Kedai Pak Pol</h1>
             <h2 class="capitalize text-lg mb-8">Asal mula kedai ini.</h2>
@@ -125,7 +126,7 @@
 <!-- Menu -->
   <section id="menu" class="w-full py-16 px-4 lg:px-16 overflow-hidden">
     
-
+    <!-- Menu Header -->
     <div class="container w-full flex flex-col justify-center gap-2 items-center mb-12 text-slate-700" data-aos="fade-right" >
       <h1 class="font-bold text-3xl ">MENU FAVORIT</h1>
       <svg height="10" width="150" xmlns="http://www.w3.org/2000/svg">
@@ -133,17 +134,17 @@
       </svg>
     </div>
 
-
+    <!-- Menu Content -->
     <div class="w-full flex items-center justify-center gap-8 flex-col md:flex-row md:flex-wrap text-neutral-800" data-aos="fade-up">
-
       <!-- Nasi Goreng Ayam -->
-      <div class="cursor-pointer w-5/6 max-w-sm flex flex-col justify-center items-center border-gray-300 border rounded-xl hover:shadow-xl hover:scale-105 transition-transform" >
-        <div class="w-full p-8 flex flex-col flex-wrap justify-center items-center gap-4">
+      <div class="cursor-pointer w-5/6 max-w-sm flex flex-col justify-center items-center border-gray-300 border rounded-xl hover:shadow-xl hover:scale-105 transition-transform">
+        <div class="w-full p-8 flex flex-col flex-wrap justify-center items-center gap-4 relative">
           <img class="rounded-xl" src="assets/img/nasgor-ayam.jpg" alt="produk">
+          <img class="absolute top-0 left-2 w-20" src="assets/icon/best-seller.png" alt="png">
+
 
           <div class="container">
             <h2 class="font-semibold text-xl tracking-tighter">Nasi Goreng + Ayam</h2>
-
 
             <!-- Bintang -->
             <div class="flex items-center my-2.5">
@@ -180,8 +181,9 @@
      
       <!-- Nasi + Ayam -->
       <div class="cursor-pointer w-5/6 max-w-sm flex flex-col justify-center items-center border-gray-300 border rounded-xl hover:shadow-xl hover:scale-105 transition-transform" >
-        <div class="w-full p-8 flex flex-col flex-wrap justify-center items-center gap-4">
+        <div class="w-full p-8 flex flex-col flex-wrap justify-center items-center gap-4 relative">
           <img class="rounded-xl" src="assets/img/nasi-ayam.jpg" alt="produk">
+          <img class="absolute top-0 left-2 w-20" src="assets/icon/best-seller.png" alt="png">
 
           <div class="container">
             <h2 class="font-semibold text-xl tracking-tighter">Nasi Putih + Ayam + Kuah Soto</h2>
@@ -221,8 +223,9 @@
       
       <!-- Mi Ayam-->
       <div class="cursor-pointer w-5/6 max-w-sm flex flex-col justify-center items-center border-gray-300 border rounded-xl hover:shadow-xl hover:scale-105 transition-transform" >
-        <div class="w-full p-8 flex flex-col flex-wrap justify-center items-center gap-4">
+        <div class="w-full p-8 flex flex-col flex-wrap justify-center items-center gap-4 relative">
           <img class="rounded-xl" src="assets/img/mie-ayam.jpg" alt="produk">
+          <img class="absolute top-0 left-2 w-20" src="assets/icon/best-seller.png" alt="png">
 
           <div class="container scrol">
             <h2 class="font-semibold text-xl tracking-tighter">Mie Ayam</h2>
@@ -342,7 +345,7 @@
     </div>
 
     <div class="flex items-center justify-center mt-12" data-aos="fade-up">
-      <a href="menu.html" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100">Lihat Selengkapnya...</a>
+      <a href="menu.html" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-300 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100">Lihat Selengkapnya...</a>
     </div>
 
   </section>
@@ -353,13 +356,13 @@
 
 <!-- Testimonial -->
    
-  <section class="w-full mt-12 bg-slate-200 py-16 px-8 flex items-center overflow-hidden">
+  <section class="w-full mt-12 bg-gray-200 py-16 px-8 flex items-center overflow-hidden">
     <div class="container w-full flex-col md:flex-row flex justify-center items-center gap-12">
 
 
-      <div class="flex-1 text-slate-700" data-aos="fade-right">
+      <div class="flex-1 text-slate-800" data-aos="fade-right">
         <!-- Text -->
-         <h1 class="uppercase font-semibold text-2xl">Testimonial</h1>
+         <h1 class="uppercase font-bold text-2xl">Testimonial</h1>
          <h2 class="capitalize text-lg mb-8">apa kata konsumen kami?</h2>
          <p class="font-montserrat text-base capitalize text-justify">Selalu mendengar pendapat customer adalah solusi yang tepat untuk mengembangkan sebuah UMKM. Kami berharap customer selalu kembali dengan wajah gembira setelah datang di kedai kami.</p>
       </div>
@@ -367,10 +370,10 @@
 
 
       <!-- Foto -->
-      <div class="flex-1 flex justify-center flex-col md:flex-row items-start gap-4" data-aos="fade-left">
+      <div class="flex-1 flex justify-end flex-col md:flex-row items-start gap-4" data-aos="fade-left">
 
         <!-- robin -->
-        <div class="w-60 rounded-lg shadow-lg bg-white md:hover:scale-105 transition-all cursor-pointer overflow-hidden">
+        <div class="w-60 rounded-lg shadow-lg bg-white transition-all overflow-hidden md:hover:scale-105 cursor-pointer">
           <!-- Bagian Gambar -->
           <div class="relative">
             <img src="assets/img/testi/robin.png" alt="Tomato" class="w-full object-cover ">
@@ -378,7 +381,7 @@
           </div>
           <!-- Konten Card -->
           <div class="p-5 flex flex-col flex-wrap">
-            <h2 class="text-xl font-bold mb-2">Muqorrobin Hasir</h2>
+            <h2 class="text-xl font-medium mb-2">Muqorrobin Hasir</h2>
             <p class="text-gray-700 text-sm capitalize text-justify">
               Mamamia Lezatos!!
             </p>
@@ -386,7 +389,7 @@
         </div>
 
         <!-- catur -->
-        <div class="w-60 rounded-lg shadow-lg bg-white md:hover:scale-105 transition-all cursor-pointer overflow-hidden">
+        <div class="w-60 rounded-lg shadow-lg bg-white transition-all overflow-hidden md:hover:scale-105 cursor-pointer">
           <!-- Bagian Gambar -->
           <div class="relative">
             <img src="assets/img/testi/catur.png" alt="Tomato" class="w-full object-cover">
@@ -394,7 +397,7 @@
           </div>
           <!-- Konten Card -->
           <div class="p-5 flex flex-col flex-wrap">
-            <h2 class="text-xl font-bold mb-2">Catur Bagus</h2>
+            <h2 class="text-xl font-medium mb-2">Catur Bagus</h2>
             <p class="text-gray-700 text-sm capitalize text-justify">
               enak dan murah sekali!
             </p>
@@ -406,63 +409,87 @@
 
 
 
+
 <!-- Gallery -->
 
   <section class="py-16 px-8 flex flex-wrap flex-col justify-center items-center overflow-hidden">
-
+    
     <div class="container w-full flex flex-col justify-center gap-2 items-center mb-12 text-slate-700" >
       <h1 class="font-bold text-3xl uppercase">galeri usaha</h1>
       <svg height="10" width="150" xmlns="http://www.w3.org/2000/svg">
         <line x1="0" y1="10" x2="250" y2="10" style="stroke:#334155;stroke-width:12" />
       </svg>
     </div>
-
-    <div id="gallery" class="relative w-full" data-carousel="slide">
-      <!-- Carousel wrapper -->
-      <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-           <!-- Item 1 -->
-          <div class="hidden duration-700 ease-in-out object-cover " data-carousel-item>
-              <img src="assets/img/bg.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
-          </div>
-          <!-- Item 2 -->
-          <div class="hidden duration-700 ease-in-out object-cover " data-carousel-item="active">
-              <img src="assets/img/bg2.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
-          </div>
-          <!-- Item 3 -->
-          <div class="hidden duration-700 ease-in-out object-cover " data-carousel-item>
-              <img src="assets/img/bg3.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
-          </div>
-          <!-- Item 4 -->
-          <div class="hidden duration-700 ease-in-out object-cover " data-carousel-item>
-              <img src="assets/img/bg1.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
-          </div>
-      </div>
-      <!-- Slider controls -->
-      <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full  group-hover:bg-white/50  ">
-              <svg class="w-4 h-4 text-slate-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-              </svg>
-              <span class="sr-only">Previous</span>
-          </span>
-      </button>
-      <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full  group-hover:bg-white/50  ">
-              <svg class="w-4 h-4 text-slate-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-              </svg>
-              <span class="sr-only">Next</span>
-          </span>
-      </button>
-    </div>
-
-    <div class="flex items-center justify-center mt-12">
-      <a href="galeri.html" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100">Lihat Selengkapnya...</a>
-    </div>
+    
+    <div class="container mx-auto px-4">
+      <div class="relative">
+        <!-- Slides -->
+        <div class="hidden mySlides">
+          <div class="absolute top-2 left-2 text-sm text-white bg-black bg-opacity-50 px-2 py-1 rounded">1 / 6</div>
+          <img src="assets/img/bg.jpg" class="w-full rounded-lg" alt="The Woods">
+        </div>
   
+        <div class="hidden mySlides">
+          <div class="absolute top-2 left-2 text-sm text-white bg-black bg-opacity-50 px-2 py-1 rounded">2 / 6</div>
+          <img src="assets/img/bg1.jpg" class="w-full rounded-lg" alt="Cinque Terre">
+        </div>
+  
+        <div class="hidden mySlides">
+          <div class="absolute top-2 left-2 text-sm text-white bg-black bg-opacity-50 px-2 py-1 rounded">3 / 6</div>
+          <img src="assets/img/bg2.jpg" class="w-full rounded-lg" alt="Mountains and fjords">
+        </div>
+  
+        <div class="hidden mySlides">
+          <div class="absolute top-2 left-2 text-sm text-white bg-black bg-opacity-50 px-2 py-1 rounded">4 / 6</div>
+          <img src="assets/img/bg3.jpg" class="w-full rounded-lg" alt="Northern Lights">
+        </div>
+  
+        <div class="hidden mySlides">
+          <div class="absolute top-2 left-2 text-sm text-white bg-black bg-opacity-50 px-2 py-1 rounded">5 / 6</div>
+          <img src="assets/img/bg3.jpg" class="w-full rounded-lg" alt="Northern Lights">
+        </div>
+  
+        <div class="hidden mySlides">
+          <div class="absolute top-2 left-2 text-sm text-white bg-black bg-opacity-50 px-2 py-1 rounded">6 / 6</div>
+          <img src="assets/img/bg3.jpg" class="w-full rounded-lg" alt="Northern Lights">
+        </div>
+  
+        <!-- Navigation buttons -->
+        <button class="prev absolute top-1/2 left-4 -translate-y-1/2 bg-black bg-opacity-50 text-white text-xl px-4 py-2 rounded-full" onclick="plusSlides(-1)">&#10094;</button>
+        <button class="next absolute top-1/2 right-4 -translate-y-1/2 bg-black bg-opacity-50 text-white text-xl px-4 py-2 rounded-full" onclick="plusSlides(1)">&#10095;</button>
+      </div>
+  
+      <!-- Caption -->
+      <div class="text-center bg-gray-800 text-white py-2 mt-4 rounded">
+        <p id="caption" class="text-sm"></p>
+      </div>
+  
+      <!-- Thumbnail Images -->
+      <div class="grid grid-cols-6 gap-2 mt-4">
+        <div>
+          <img class="demo cursor w-full rounded-lg opacity-60 hover:opacity-100" src="img_woods.jpg" onclick="currentSlide(1)" alt="The Woods">
+        </div>
+        <div>
+          <img class="demo cursor w-full rounded-lg opacity-60 hover:opacity-100" src="img_5terre.jpg" onclick="currentSlide(2)" alt="Cinque Terre">
+        </div>
+        <div>
+          <img class="demo cursor w-full rounded-lg opacity-60 hover:opacity-100" src="img_mountains.jpg" onclick="currentSlide(3)" alt="Mountains and fjords">
+        </div>
+        <div>
+          <img class="demo cursor w-full rounded-lg opacity-60 hover:opacity-100" src="img_lights.jpg" onclick="currentSlide(4)" alt="Northern Lights">
+        </div>
+        <div>
+          <img class="demo cursor w-full rounded-lg opacity-60 hover:opacity-100" src="img_nature.jpg" onclick="currentSlide(5)" alt="Nature and sunrise">
+        </div>
+        <div>
+          <img class="demo cursor w-full rounded-lg opacity-60 hover:opacity-100" src="img_snow.jpg" onclick="currentSlide(6)" alt="Snowy Mountains">
+        </div>
+      </div>
+    </div>
   </section>
-
 <!-- End Gallery -->
+
+
 
 
 
