@@ -8,17 +8,15 @@ AOS.init({
 })
 
 
-// Sticky Nav
-if (document.title != "Kontak - Kedai Pak Pol") {    
-window.addEventListener('scroll', () =>{
-    if (window.scrollY > 25) {
-        nav.classList.add('sticky-active');
-        nav.classList.remove('border-b');
-    } else {
-        nav.classList.remove('sticky-active');
-        nav.classList.add('border-b');
-    }
-});
+// Sticky Nav Beranda only
+if (document.title == "Beranda - Warung Pak Pol") {   
+    window.addEventListener('scroll', () =>{
+        if (window.scrollY > 25) {
+            nav.classList.add('sticky-active');
+        } else {
+            nav.classList.remove('sticky-active');
+        }
+    });
 }
 
 
