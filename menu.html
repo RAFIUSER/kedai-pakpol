@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth font-poppins">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri - Warung Pak Pol</title>
+    <link rel="shortcut icon" href="assets/icon/favicon.ico" type="image/x-icon">
+    
+    <!-- Flowbite -->
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+        
+    <!-- Animate on Scroll (AOS) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+</head>
+<body>
+<!-- Navvv -->
+  <nav id="nav" class="fixed w-full z-40 top-0 start-0 bg-main font-poppins shadow-md shadow-black">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="index.html" class="flex items-center space-x-3">
+          <img src="assets/img/KedaiPakPol-Rev.png" class="h-8" alt="Logo">
+      </a>
+
+      <!-- Hamburger -->
+      <div class="flex md:order-2 space-x-3 md:space-x-0 md:hidden">
+        <button id="hamburger" class="text-white z-20">
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Sidebar -->
+      <div id="sidebar" class="fixed top-0 right-0 w-2/3 md:w-1/4 h-full bg-main text-white transform translate-x-full transition-transform duration-300 ease-in-out z-50">
+        <div class="p-4 flex justify-between items-center border-b border-white">
+          <h2 class="text-2xl font-bold">Menu</h2>
+          <!-- Tombol Close Sidebar -->
+          <button id="closeSidebar" class="text-3xl font-bold">&times;</button>
+        </div>
+        <ul class="p-4 text-center">
+          <li class="mb-4"><a href="index.html" class="mobileBtn hover:text-gray-300">Beranda</a></li>
+          <li class="mb-4"><a href="index.html#tentang" class="mobileBtn hover:text-gray-300">Tentang</a></li>
+          <li class="mb-4"><a href="menu.html" class="mobileBtn hover:text-gray-300">Menu Makanan</a></li>
+          <li class="mb-4"><a href="kontak.html" class="mobileBtn hover:text-gray-300">Kontak</a></li>
+        </ul>
+      </div>
+
+      <!-- Overlay Sidebar -->
+      <div id="overlay" class="hidden fixed inset-0 bg-black opacity-50 z-40"></div>
+
+
+      <!-- Desktop Nav -->
+      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+        <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border rounded-lg md:space-x-8 md:flex-row md:mt-0 md:border-0">
+          <li>
+            <a href="index.html#tentang" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-500 md:p-0">Tentang</a>
+          </li>
+          <li>
+            <a href="menu.html" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-500 md:p-0 ">Menu</a>
+          </li>
+          <li>
+            <a href="galeri.html" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-500 md:p-0 ">Galeri</a>
+          </li>
+          <li>
+            <a href="kontak.html" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-500 md:p-0 ">Kontak</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- END NAVVVVVVVVVVVVVVVVVVVV -->
+
+
+
+
+<!-- SLider -->
+<section class="py-24 px-8 flex gap-8 flex-wrap flex-col justify-center items-center overflow-hidden">
+
+  <div id="gallery" class="relative w-full" data-carousel="slide">
+    <!-- Carousel wrapper -->
+    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+         <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out object-cover " data-carousel-item>
+            <img src="assets/img/kenangan/kenangan1.jpg" class="rounded-xl absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out object-cover " data-carousel-item="active">
+            <img src="assets/img/kenangan/kenangan2.jpeg" class="rounded-xl absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out object-cover " data-carousel-item>
+            <img src="assets/img/kenangan/kenangan3.jpeg" class="rounded-xl absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+        </div>
+        <!-- Item 4 -->
+        <div class="hidden duration-700 ease-in-out object-cover " data-carousel-item>
+            <img src="assets/img/kenangan/kenangan4.jpeg" class="rounded-xl absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+        </div>
+        <!-- Item 5 -->
+        <div class="hidden duration-700 ease-in-out object-cover " data-carousel-item>
+            <img src="assets/img/kenangan/kenangan5.jpg" class="rounded-xl absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+        </div>
+    </div>
+    <!-- Slider controls -->
+    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full  group-hover:bg-white/50  ">
+            <svg class="w-4 h-4 text-slate-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+            </svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full  group-hover:bg-white/50  ">
+            <svg class="w-4 h-4 text-slate-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
+  </div>
+
+</section>
+<!-- End Slider -->
+
+
+
+
+
+
+<!-- Menu section -->
+<section class="max-w-5xl mx-auto mb-16">
+  <!-- Header -->
+  <div class="container w-full flex flex-col justify-center gap-2 items-center mb-12 text-slate-700" >
+    <h1 class="font-bold text-3xl uppercase">Menu tersedia</h1>
+    <svg height="10" width="150" xmlns="http://www.w3.org/2000/svg">
+      <line x1="0" y1="10" x2="250" y2="10" style="stroke:#334155;stroke-width:12" />
+    </svg>
+  </div>
+
+
+
+</section>
+<!-- End Menu section -->
+
+
+
+
+
+<!-- Tombol WhatsApp -->
+  <a href="https://wa.me/6282211445084?text=Halo%20bu%2C%20apakah%20toko%20sedang%20buka%3F" target="_blank" class="z-50 fixed bottom-4 right-4 bg-green-500 p-4 rounded-full shadow-lg hover:bg-green-600 transition-transform transform hover:scale-110" aria-label="Chat on WhatsApp">
+    <img src="assets/icon/whatsapp-svgrepo-com.svg" class="h-8 w-8" alt="wa">
+  </a>
+<!-- Tombol WA end -->
+
+<!-- Footer -->
+  <footer class="bg-slate-500 overflow-hidden font-poppins absolute">
+    <div class="contianer text-white w-full flex flex-col text-wrap md:flex-row flex-wrap items-start justify-between gap-8 md:gap-4 p-8">
+      <div class="container flex-1 flex justify-center flex-col">
+        <h1 class="font-bold text-xl">Tentang</h1>
+        <p class="capitalize">Sebuah Kedai dengan cita rasa khas yang menyediakan aneka makanan dan minuman.</p>
+      </div>
+      <div class="container flex-1 flex justify-center flex-col">
+        <h1 class="font-bold text-xl">Alamat</h1>
+        <p>Jl. Sungai Sahang, Lorok Pakjo, Kec. Ilir Bar. I, Kota Palembang, Sumatera Selatan</p>
+      </div>
+      <div class="container flex-1 flex justify-end">
+        <iframe class="w-full h-52" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249.02646194730144!2d104.7311128256828!3d-2.979908255528289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b75eb0503a7c3%3A0x28ea9ddd3efd54fd!2sManajemen%20informatika%20D4%20POLITEKNIK%20NEGERI%20SRIWIJAYA!5e0!3m2!1sid!2sid!4v1734265126172!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    <div class="bg-main text-white p-2">
+      <p class="text-center text-base">Copyright &copy Kelompok 1 <script>document.write(new Date().getFullYear());</script></p>
+    </div>
+  </footer>
+<!-- Footer Enddd -->
+
+<!-- Custom script -->
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+<!-- Custom script end -->
+</body>
+</html>
