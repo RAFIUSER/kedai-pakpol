@@ -1,6 +1,3 @@
-const nav = document.getElementById('nav');
-
-
 // AOS Lib
 AOS.init({
     duration: 1200,
@@ -9,6 +6,7 @@ AOS.init({
 
 
 // Sticky Nav Beranda only
+const nav = document.getElementById('nav');
 if (document.title == "Beranda - Warung Pak Pol") {   
     window.addEventListener('scroll', () =>{
         if (window.scrollY > 25) {
@@ -42,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Tutup sidebar saat link di klik
     sidebarLinks.forEach(link => link.addEventListener('click', toggleSidebar));
 });
-  
+// Mobile SideBar End
 
 
 // Galeri index.html
@@ -79,5 +77,43 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " opacity-100";
   captionText.innerHTML = dots[slideIndex - 1].alt;
 }
+// End Galeri Index.html
 
-    
+
+
+// Popup Modal Galeri
+function openModal(imageSrc) {
+  const modal = document.getElementById('imageModal');
+  const modalImage = document.getElementById('modalImage');
+  
+  modalImage.src = imageSrc;
+
+  // Hapus kelas `hidden` dan tambahkan `flex`
+  modal.classList.remove('hidden');
+  modal.classList.add('flex');
+
+  // Tambahkan efek animasi
+  setTimeout(() => {
+    modal.classList.remove('opacity-0');
+    modal.classList.add('opacity-100');
+    modal.firstElementChild.classList.remove('scale-95');
+    modal.firstElementChild.classList.add('scale-100');
+  }, 10); // Sedikit delay untuk memulai animasi
+}
+
+function closeModal() {
+  const modal = document.getElementById('imageModal');
+  
+  // Tambahkan efek animasi keluar
+  modal.classList.remove('opacity-100');
+  modal.classList.add('opacity-0');
+  modal.firstElementChild.classList.remove('scale-100');
+  modal.firstElementChild.classList.add('scale-95');
+  
+  // Tunggu animasi selesai sebelum menyembunyikan modal
+  setTimeout(() => {
+    modal.classList.remove('flex');
+    modal.classList.add('hidden');
+  }, 300); // Waktu sesuai dengan `duration-300`
+}
+// Popup Modal Galeri End

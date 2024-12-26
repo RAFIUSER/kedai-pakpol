@@ -12,6 +12,7 @@ module.exports = {
       },
       colors: {
         'main': '#003D81',
+        'black-transparrent': 'rgba(0, 0, 0, 0.8)',
       },
       height: {
         '1/3-screen': '40vh', // 1/3 dari tinggi layar

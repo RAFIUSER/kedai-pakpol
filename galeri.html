@@ -171,9 +171,9 @@
       </div>
     </div>
     
-    <!-- Card 2 -->
+    <!-- Card 3 -->
     <div class="flex flex-col justify-center items-center p-4 gap-4 bg-white rounded-lg border border-gray-200 overflow-hidden"  data-aos="fade-up">
-      <img class="aspect-video object-cover w-full rounded-md" src="assets/img/kenangan/kenangan4.jpeg" alt="img">
+      <img class="aspect-video object-cover w-full rounded-md" src="assets/img/kenangan/kenangan4.jpeg" alt="img" onclick="openModal('assets/img/kenangan/kenangan4.jpeg')">
       <div class="self-start">
           <h3 class="text-lg font-semibold mb-2">Pengambilan Gambar oleh Tim Media</h3>
           <p class="text-sm text-gray-500">xx Desember 2024 | Kedai Pak Pol</p>
@@ -184,7 +184,7 @@
 
     <!-- Card 4 -->
     <div class="flex flex-col justify-center items-center p-4 gap-4 bg-white rounded-lg border border-gray-200 overflow-hidden"  data-aos="fade-up">
-      <img class="aspect-video object-cover w-full rounded-md" src="assets/img/kenangan/kenangan3.jpeg" alt="img">
+      <img class="aspect-video object-cover w-full rounded-md" src="assets/img/kenangan/kenangan3.jpeg" alt="img" onclick="openModal('assets/img/kenangan/kenangan3.jpeg')">
       <div class="self-start">
           <h3 class="text-lg font-semibold mb-2">Perolehan Juara 1 Kelompok 1</h3>
           <p class="text-sm text-gray-500">xx Desember 2024 | Politeknik Negeri Sriwijaya</p>
@@ -193,9 +193,9 @@
       </div>
     </div>
 
-    <!-- Card 3 -->
+    <!-- Card 5 -->
     <div class="flex flex-col justify-center items-center p-4 gap-4 bg-white rounded-lg border border-gray-200 overflow-hidden"  data-aos="fade-up">
-      <img class="aspect-video object-cover w-full rounded-md" src="assets/img/kenangan/kenangan2.jpeg" alt="img">
+      <img class="aspect-video object-cover w-full rounded-md" src="assets/img/kenangan/kenangan2.jpeg" alt="img" onclick="openModal('assets/img/kenangan/kenangan2.jpeg')">
       <div class="self-start">
           <h3 class="text-lg font-semibold mb-2">Perolehan Hadiah Kelompok 1</h3>
           <p class="text-sm text-gray-500">xx Desember 2024 | Politeknik Negeri Sriwijaya</p>
@@ -204,9 +204,9 @@
       </div>    
     </div>  
 
-
+    <!-- Card 6 -->
     <div class="flex flex-col justify-center items-center p-4 gap-4 bg-white rounded-lg border border-gray-200 overflow-hidden"  data-aos="fade-up">
-      <img class="aspect-video object-cover w-full rounded-md" src="assets/img/kenangan/kenangan5.jpg" alt="img">
+      <img class="aspect-video object-cover w-full rounded-md" src="assets/img/kenangan/kenangan5.jpg" alt="img" onclick="openModal('assets/img/kenangan/kenangan5.jpg')">
       <div class="self-start">
           <h3 class="text-lg font-semibold mb-2">Dokumentasi Pengerjaan Makalah</h3>
           <p class="text-sm text-gray-500">xx Desember 2024 | Politeknik Negeri Sriwijaya</p>
@@ -215,9 +215,9 @@
       </div>
     </div>
     
-    
+    <!-- Card 7 -->
     <div class="flex flex-col justify-center items-center p-4 gap-4 bg-white rounded-lg border border-gray-200 overflow-hidden"  data-aos="fade-up">
-      <img class="aspect-video object-cover w-full rounded-md" src="assets/img/kenangan/kenangan6.jpg" alt="img">
+      <img class="aspect-video object-cover w-full rounded-md" src="assets/img/kenangan/kenangan6.jpg" alt="img" onclick="openModal('assets/img/kenangan/kenangan6.jpg')">
       <div class="self-start">
           <h3 class="text-lg font-semibold mb-2">Bahas Kelanjutan Proyek</h3>
           <p class="text-sm text-gray-500">xx Desember 2024 | Politeknik Negeri Sriwijaya</p>
@@ -226,9 +226,9 @@
       </div>
     </div>
     
-    
+    <!-- Card 8 -->
     <div class="flex flex-col justify-center items-center p-4 gap-4 bg-white rounded-lg border border-gray-200 overflow-hidden" data-aos="fade-up">
-      <img class="aspect-video object-cover w-full rounded-md" src="assets/img/kenangan/kenangan8.jpg" alt="img">
+      <img class="aspect-video object-cover w-full rounded-md" src="assets/img/kenangan/kenangan8.jpg" alt="img" onclick="openModal('assets/img/kenangan/kenangan8.jpg')">
       <div class="self-start">
           <h3 class="text-lg font-semibold mb-2">Ini tidak tahu lagi ngapain berdua</h3>
           <p class="text-sm text-gray-500">xx Desember 2024 | Politeknik Negeri Sriwijaya</p>
@@ -239,6 +239,16 @@
 
   </div>
 </section>
+
+<!-- Modal -->
+<div id="imageModal" class="fixed inset-0 z-50 hidden bg-black-transparrent items-center justify-center transition-opacity duration-300" onclick="closeModal()">
+  <div class="relative bg-white p-4 rounded-md transform transition-transform duration-300 scale-95 w-4/5 md:w-1/2 overflow-hidden">
+    <button class="absolute top-5 right-5 bg-gray-700 rounded-full p-2" onclick="closeModal()">
+      <img src="assets/icon/close-icon-white.svg" alt="close" class="w-5 h-5">
+    </button>
+    <img id="modalImage" src="" alt="Gambar" class="rounded-md w-full">
+  </div>
+</div>
 <!-- End Galeri lanjutan -->
 
 
