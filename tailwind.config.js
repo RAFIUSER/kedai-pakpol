@@ -20,6 +20,9 @@ module.exports = {
       boxShadow: {
         'rounded': '0 4px 6px rgba(0, 0, 0, 0.5)',
       },
+      zIndex: {
+        'absolut': '100',
+      }
     },
   },
   plugins: [],
