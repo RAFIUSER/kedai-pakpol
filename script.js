@@ -1,3 +1,8 @@
+window.onload = function () {
+    document.body.classList.remove('hidden');
+};
+
+
 // AOS Lib
 AOS.init({
     duration: 1200,
