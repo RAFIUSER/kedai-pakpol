@@ -25,75 +25,76 @@
 </head>
 <body>
 <!-- Loading Screen -->
-<div id="loading" class="fixed z-absolut inset-0 flex flex-wrap items-center flex-col justify-center bg-white">
+<div id="loading" class="fixed overflow-hidden z-absolut inset-0 flex flex-wrap items-center flex-col justify-center bg-white">
   <h1 class="text-xl">Loading...</h1>
   <img class="w-28" src="assets/icon/loading.svg" alt="loading">
 </div>
-<!-- Loading End -->
+<!-- Loading screen End -->
 
 
 
-<!-- Navvv -->
-  <nav id="nav" class="fixed w-full z-40 top-0 start-0 bg-main font-poppins shadow-md shadow-black">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-      <a href="index.html" class="flex items-center space-x-3">
-          <img src="assets/img/KedaiPakPol-Rev.png" class="h-8" alt="Logo">
-      </a>
+<!-- NAVVV -->
+<nav id="nav" class="fixed w-full z-40 top-0 start-0 border-gray-200 border-b font-poppins ">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="index.html" class="flex items-center space-x-3">
+        <img src="assets/img/KedaiPakPol-Rev.png" class="h-8" alt="Logo">
+    </a>
 
-      <!-- Hamburger -->
-      <div class="flex md:order-2 space-x-3 md:space-x-0 md:hidden">
-        <button id="hamburger" class="text-white z-20">
-          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-          </svg>
-        </button>
-      </div>
-
-      <!-- Sidebar -->
-      <div id="sidebar" class="fixed top-0 right-0 w-2/3 md:w-1/4 h-full bg-main text-white transform translate-x-full transition-transform duration-300 ease-in-out z-50">
-        <div class="p-4 flex justify-between items-center border-b border-white">
-          <h2 class="text-2xl font-bold">Menu</h2>
-          <!-- Tombol Close Sidebar -->
-          <button id="closeSidebar" class="text-3xl font-bold">&times;</button>
-        </div>
-        <ul class="p-4 text-center">
-          <li class="mb-4"><a href="index.html" class="mobileBtn hover:text-gray-300">Beranda</a></li>
-          <li class="mb-4"><a href="index.html#tentang" class="mobileBtn hover:text-gray-300">Tentang</a></li>
-          <li class="mb-4"><a href="menu.html" class="mobileBtn hover:text-gray-300">Menu Makanan</a></li>
-          <li class="mb-4"><a href="kontak.html" class="mobileBtn hover:text-gray-300">Kontak</a></li>
-        </ul>
-      </div>
-
-      <!-- Overlay Sidebar -->
-      <div id="overlay" class="hidden fixed inset-0 bg-black opacity-50 z-40"></div>
-
-
-      <!-- Desktop Nav -->
-      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-        <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border rounded-lg md:space-x-8 md:flex-row md:mt-0 md:border-0">
-          <li>
-            <a href="index.html#tentang" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-500 md:p-0">Tentang</a>
-          </li>
-          <li>
-            <a href="menu.html" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-500 md:p-0 ">Menu</a>
-          </li>
-          <li>
-            <a href="galeri.html" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-500 md:p-0 ">Galeri</a>
-          </li>
-          <li>
-            <a href="kontak.html" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-500 md:p-0 ">Kontak</a>
-          </li>
-        </ul>
-      </div>
+    <!-- Hamburger -->
+    <div class="flex md:order-2 space-x-3 md:space-x-0 md:hidden">
+      <button id="hamburger" class="text-white z-20">
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+      </button>
     </div>
-  </nav>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="fixed top-0 right-0 w-2/3 md:w-1/4 h-full bg-main text-white transform translate-x-full transition-transform duration-300 ease-in-out z-50">
+      <div class="p-4 flex justify-between items-center border-b border-white">
+        <h2 class="text-2xl font-bold">Menu</h2>
+        <!-- Tombol Close Sidebar -->
+        <button id="closeSidebar" class="text-3xl font-bold">&times;</button>
+      </div>
+      <ul class="p-4 text-center">
+        <li class="mb-4"><a href="index.html" class="mobileBtn hover:text-gray-300">Beranda</a></li>
+        <li class="mb-4"><a href="index.html#tentang" class="mobileBtn hover:text-gray-300">Tentang</a></li>
+        <li class="mb-4"><a href="menu.html" class="mobileBtn hover:text-gray-300">Menu Makanan</a></li>
+        <li class="mb-4"><a href="galeri.html" class="mobileBtn hover:text-gray-300">Galeri</a></li>
+        <li class="mb-4"><a href="kontak.html" class="mobileBtn hover:text-gray-300">Kontak</a></li>
+      </ul>
+    </div>
+
+    <!-- Overlay Sidebar -->
+    <div id="overlay" class="hidden fixed inset-0 bg-black opacity-50 z-40"></div>
+
+
+    <!-- Desktop Nav -->
+    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border rounded-lg md:space-x-8 md:flex-row md:mt-0 md:border-0">
+        <li>
+          <a href="index.html#tentang" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-500 md:p-0">Tentang</a>
+        </li>
+        <li>
+          <a href="menu.html" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-500 md:p-0 ">Menu</a>
+        </li>
+        <li>
+          <a href="galeri.html" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-500 md:p-0 ">Galeri</a>
+        </li>
+        <li>
+          <a href="kontak.html" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-500 md:p-0 ">Kontak</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 <!-- END NAVVVVVVVVVVVVVVVVVVVV -->
 
 
 
 
 <!-- SLider -->
-<section class="py-24 px-8 flex gap-8 flex-wrap flex-col justify-center items-center overflow-hidden" data-aos="fade-up">
+<section class="py-24 px-8 flex gap-8 flex-wrap  flex-col justify-center items-center overflow-hidden" data-aos="fade-up">
 
   <div id="gallery" class="relative w-full" data-carousel="slide">
     <!-- Carousel wrapper -->
