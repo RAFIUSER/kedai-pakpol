@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beranda - Warung Pak Pol</title>
     <link rel="shortcut icon" href="assets/icon/favicon.ico" type="image/x-icon">
-    
-    <!-- Flowbite -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" /> -->
-    
+        
     <!-- Tailwind CSS -->
     <link rel="stylesheet" href="styles.css">
 
@@ -32,7 +29,15 @@
       }
     </style>
 </head>
-<body class="hidden">
+<body>
+<!-- Loading Screen -->
+  <div id="loading" class="fixed z-50 inset-0 flex flex-wrap items-center flex-col justify-center bg-white">
+    <h1 class="text-xl">Loading...</h1>
+    <img class="w-32" src="assets/icon/loading.svg" alt="loading">
+  </div>
+<!-- Loading screen End -->
+
+
 <!-- NAVVV -->
   <nav id="nav" class="fixed w-full z-40 top-0 start-0 border-gray-200 border-b font-poppins ">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -344,7 +349,7 @@
 
     </div>
 
-    <div class="flex items-center justify-center mt-12" data-aos="fade-up">
+    <div class="animate-bounce flex items-center justify-center mt-12" data-aos="fade-up">
       <a href="menu.html" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-300 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100">Lihat Selengkapnya...</a>
     </div>
 

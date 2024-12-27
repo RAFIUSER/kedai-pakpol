@@ -1,5 +1,6 @@
 window.onload = function () {
-    document.body.classList.remove('hidden');
+  const loading = document.getElementById("loading");
+  loading.classList.add("hidden");
 };
 
 
