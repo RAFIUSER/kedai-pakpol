@@ -15,7 +15,7 @@ module.exports = {
         'black-transparrent': 'rgba(0, 0, 0, 0.8)',
       },
       height: {
-        '1/3-screen': '40vh', // 1/3 dari tinggi layar
+        '1/3-screen': '40vh',
       },
       boxShadow: {
         'rounded': '0 4px 6px rgba(0, 0, 0, 0.5)',

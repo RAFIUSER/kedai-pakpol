@@ -1,6 +1,8 @@
 window.onload = function () {
   const loading = document.getElementById("loading");
   loading.classList.add("hidden");
+  // Jika video tidak diload dengan cache maka page akan reload otomatis
+  // location.reload();
 };
 
 
