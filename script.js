@@ -1,8 +1,27 @@
 window.onload = function () {
   const loading = document.getElementById("loading");
   loading.classList.add("hidden");
-  // Jika video tidak diload dengan cache maka page akan reload otomatis
-  // location.reload();
+
+  const video = document.getElementById("video-bg");
+  const maxLoadTime = 5000; // 5 detik
+  let isLoaded = false;
+
+  const checkVideoLoad = setTimeout(() => {
+      if (video.readyState < 3) { // Jika video belum dapat dimuat sepenuhnya
+          console.warn("Video gagal dimuat, merefresh halaman...");
+          location.reload(); // Refresh halaman
+      } else {
+          isLoaded = true;
+          console.log("Video berhasil dimuat.");
+      }
+  }, maxLoadTime);
+
+  // Hentikan pemeriksaan jika video sudah dimuat
+  video.oncanplaythrough = () => {
+      clearTimeout(checkVideoLoad);
+      isLoaded = true;
+      console.log("Video tersedia dan siap diputar.");
+  };
 };
 
 
