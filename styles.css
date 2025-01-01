@@ -901,6 +901,14 @@ video {
   width: 100%;
 }
 
+.w-3 {
+  width: 0.75rem;
+}
+
+.w-40 {
+  width: 10rem;
+}
+
 .max-w-4xl {
   max-width: 56rem;
 }
@@ -1308,6 +1316,11 @@ video {
   padding-bottom: 6rem;
 }
 
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -1322,6 +1335,10 @@ video {
 
 .pt-20 {
   padding-top: 5rem;
+}
+
+.pb-16 {
+  padding-bottom: 4rem;
 }
 
 .text-center {
@@ -1758,11 +1775,6 @@ video {
   .md\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
-  }
-
-  .md\:px-16 {
-    padding-left: 4rem;
-    padding-right: 4rem;
   }
 
   .md\:px-8 {
