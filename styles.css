@@ -1743,6 +1743,10 @@ video {
     border-width: 0px;
   }
 
+  .md\:border {
+    border-width: 1px;
+  }
+
   .md\:p-0 {
     padding: 0px;
   }
