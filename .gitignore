@@ -1,30 +1,3 @@
-# Node modules
 node_modules/
-
-# Output build atau file CSS hasil kompilasi Tailwind
 assets/css/*.css
-
-# File lock dari package manager
 package-lock.json
-yarn.lock
-
-# Konfigurasi environment
-.env
-.env.local
-.env.*.local
-
-# Logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Direktori atau file build tambahan
-dist/
-build/
-
-# File sistem operasi atau editor
-.DS_Store
-.vscode/
-.idea/
-Thumbs.db
