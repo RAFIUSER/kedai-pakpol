@@ -1,9 +1,8 @@
 {
-  "name": "lp---profilusaha",
-  "version": "1.0.0",
+  "name": "kedaipakpol",
+  "version": "1.1.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "tlw" : "npx tailwindcss -i ./assets/css/input.css -o ./styles.css --watch"
   },
   "keywords": [],
@@ -11,6 +10,6 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "tailwindcss": "^3.4.16"
+    "tailwindcss": "^3.4.17"
   }
 }
